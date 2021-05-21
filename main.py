@@ -131,10 +131,10 @@ def check_positive(value):
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description="Scrape and store data")
+    parser = argparse.ArgumentParser(description="Scrape twitter account usernames of crypto currencies based on their market cap")
 
     parser.add_argument("n",   
-                        help="display a square of a given number",
+                        help="Scrape N crypto currencies.",
                         type=check_positive
     )
 
@@ -142,19 +142,20 @@ if __name__ == '__main__':
                         nargs='?', 
                         default=1,
                         type=check_positive, 
-                        help="Select from which position to begin"
+                        help="Select from which position to begin based on market cap."
     )
     
     parser.add_argument(
         "-f", "--filename",
         type=str,
-        help="Name the file of the .csv",
+        help="Name the file of the .csv you want to store.",
         default="crypto-social.csv"
     )
 
     parser.add_argument(
         "-q", "--quiet", 
-        action="store_false"
+        action="store_false",
+        help="Run the program without printing."
     )
 
     args = parser.parse_args()
