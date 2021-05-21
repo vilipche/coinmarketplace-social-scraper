@@ -1,0 +1,5 @@
+requests
+selenium
+bs4
+pandas
+chromedriver_autoinstaller
