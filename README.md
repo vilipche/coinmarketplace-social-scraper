@@ -1,3 +1,6 @@
+Python script that scrapes data from coinmarketplace.
+Specifiaclly scrapes the twitter profiles of each crypt currency sorted by the marketcap. 
+
 ## How to install
 
 ```
